@@ -2,39 +2,67 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="images/favicon-32x32.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tip calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Tip-Calculator</title>
   </head>
   <body>
-    <p>SPLI</p>
-    <p>TTER</p>
+    <nav>
+      <p>SPLI</p>
+      <p>TTER</p>
+    </nav>
     <main>
       <section class="card-section">
-        <div class="bill-content">
           <span>Bill</span>
-          <input type="text" />
+              <label for="input-tip" class="input-tip">
+                 <input type="text" placeholder="0"/>
+              </label>
           <span>Select Tip %</span>
           <div class="buttons">
-            <div class="first-row"></div>
-            <div class="second-row"></div>
+            <div class="first-row">
+              <button>5%</button>
+              <button>10%</button>
+            </div>
+            <div class="second-row">
+              <button>15%</button>
+              <button>25%</button>
+            </div>
+            <div class="third-row">
+              <button>50%</button>
+              <button>Custom</button>
+            </div>
           </div>
-          <p>Number of People</p>
+          <span class="num">Number of People</span>
+          <label for="input-people" class="input-people">
           <input type="number" />
+          </label>
         </div>
         <div class="tip-content">
           <div class="tip-info">
-            <p>Tip Amount</p>
+            <div class="column-text">
+              <p>Tip Amount</p>
             <span>/ person</span>
+            </div>
+               <span class="tip-value">$4.27</span>
           </div>
-          <span class="tip-value">$4.27</span>
-          <p>Total</p>
-          <span>/ person</span>
-          <span class="tip-value">$32.79</span>
+          <div class="total-info">
+              <div class="column-text">
+                  <p>Total</p>
+                  <span>/ person</span>
+          </div>
+           <span class="tip-value">$32.79</span>
+          </div>
           <button class="reset">RESET</button>
         </div>
       </section>
     </main>
-    <script type="module" src="/main.js"></script>
+    <script type="module" src="/script.js"></script>
   </body>
 </html>
