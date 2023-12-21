@@ -44,12 +44,13 @@ main {
   background-color: var(--White);
 }
 
-.card-section {
+.first-part .card-section {
   width: 86%;
   height: 100%;
   display: flex;
   flex-direction: column;
 }
+
 .card-section span:nth-child(1) {
   margin-top: 20px;
 }
@@ -59,7 +60,7 @@ span {
   color: var(--Dark-grayish-cyan);
 }
 
-.input-tip input {
+.first-part .input-tip input {
   font-family: "Space Mono", monospace;
   width: 97%;
   height: 65%;
@@ -72,10 +73,16 @@ span {
   outline: none;
   color: var(--Very-dark-cyan);
   background-color: var(--Very-light-grayish-cyan);
-  background-position: left center;
   background-image: url(images/icon-dollar.svg);
+  background-position-y: 50%;
+  background-position-x: 5%;
+  text-align: right;
   background-repeat: no-repeat;
   padding: 10px 50px 20px;
+}
+
+.card-section {
+  padding: 0 1rem;
 }
 
 .buttons {
@@ -85,13 +92,16 @@ span {
   gap: 15px;
 }
 
-.first-row {
-  display: flex;
+.btn-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   gap: 20px;
 }
 
-.first-row button {
+.btn-container button {
   font-family: "Space Mono", monospace;
+  margin: auto;
   font-size: 2.4rem;
   width: 135px;
   padding: 5px;
@@ -136,11 +146,12 @@ span {
   color: var(--White);
 }
 
-.third-row input {
+.btn-container input {
   font-family: "Space Mono", monospace;
   font-size: 2.4rem;
   width: 135px;
   padding: 5px;
+  text-align: center;
   border: none;
   outline: none;
   background-color: var(--Very-light-grayish-cyan);
@@ -155,9 +166,9 @@ span {
   margin-top: 25px;
 }
 
-.input-people input {
+.card-section .input-people input {
   font-family: "Space Mono", monospace;
-  width: 97%;
+  width: 90%;
   height: 65%;
   border-radius: 5px;
   display: flex;
@@ -166,9 +177,11 @@ span {
   justify-content: center;
   border: none;
   outline: none;
+  background-position-y: 50%;
+  background-position-x: 5%;
+  text-align: right;
   color: var(--Very-dark-cyan);
   background-color: var(--Very-light-grayish-cyan);
-  background-position: left center;
   background-image: url(images/icon-person.svg);
   background-repeat: no-repeat;
   padding: 10px 50px 20px;
@@ -227,6 +240,10 @@ span {
   color: var(--White);
 }
 
+input[type="number"]:focus {
+  border: 3px solid var(--Strong-cyan);
+}
+
 .reset {
   margin-top: 16px;
   font-family: "Space Mono", monospace;
@@ -242,4 +259,92 @@ span {
   outline: none;
   font-size: 2.1rem;
   padding: 4px 5px;
+}
+@media only screen and (min-width: 991px) {
+  .title {
+    margin-top: 5px;
+  }
+  .first-part {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  main {
+    width: 100%;
+    height: 100%;
+    max-width: 1000px;
+    aspect-ratio: 2;
+    margin-top: 20px;
+    display: flex;
+    margin: 16px;
+    flex-direction: row;
+    padding: 1rem 3rem;
+  }
+
+  .card-section {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .first-part .input-tip input {
+    font-family: "Space Mono", monospace;
+    width: 100%;
+    height: 25%;
+    border-radius: 5px;
+    display: flex;
+    font-size: 2.4rem;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    color: var(--Very-dark-cyan);
+    background-color: var(--Very-light-grayish-cyan);
+    background-image: url(images/icon-dollar.svg);
+    background-position-y: 50%;
+    background-position-x: 5%;
+    text-align: right;
+    background-repeat: no-repeat;
+  }
+
+  .buttons button {
+    width: 110px;
+  }
+
+  .tip-content {
+    width: 50%;
+    height: 90%;
+    padding: 5rem 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .reset {
+    margin-top: 200px;
+    font-family: "Space Mono", monospace;
+    background-color: var(--Strong-cyan);
+    color: var(--Very-dark-cyan);
+    width: 97%;
+    height: 15%;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    font-size: 2.1rem;
+    padding: 4px 5px;
+  }
+  .tip-value {
+    font-size: 3.4rem;
+    color: var(--Strong-cyan);
+  }
+
+  .btn-container {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
 }
