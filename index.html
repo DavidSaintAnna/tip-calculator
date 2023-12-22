@@ -24,21 +24,21 @@
           <div class="buttons">
           <span>Bill</span>
               <label for="input-tip" class="input-tip">
-                 <input type="number" placeholder="0"/>
+                 <input type="number" placeholder="0" id="bill">
               </label>
           <span>Select Tip %</span>
             <div class="btn-container">
-              <button>5%</button>
-              <button>10%</button>
-              <button>15%</button>
-              <button>25%</button>
-              <button>50%</button>
-              <input type="number" placeholder="Custom"/>
+              <button id="btn-5">5%</button>
+              <button id="btn-10">10%</button>
+              <button id ="btn-15">15%</button>
+              <button id="btn-25">25%</button>
+              <button id="btn-50">50%</button>
+              <input type="number" placeholder="Custom" id="custom">
             </div>
         <div class="num">
               <span>Number of People</span>
             <label for="input-people" class="input-people">
-              <input type="number" />
+              <input type="number" id="people-quantity">
           </label>
             </div> 
           </div>
@@ -53,19 +53,19 @@
               </div>
             <span>/ person</span>
             </div>
-               <span class="tip-value">$4.27</span>
+               <span class="tip-amount"></span>
           </div>
           <div class="total-info">
               <div class="column-text">
                    <p>Total</p>
                     <span>/ person</span>
           </div>
-           <span class="tip-value">$32.79</span>
+           <span class="tip-value"></span>
           </div>
           <button class="reset">RESET</button>
         </div>
       </section>
     </main>
-    <script type="module" src="/script.js"></script>
+    <script  src="script.js"></script>
   </body>
 </html>
