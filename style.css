@@ -193,7 +193,16 @@ span {
   font-size: 2.4rem;
   color: var(--Strong-cyan);
 }
-
+.names {
+  display: flex;
+  justify-content: space-between;
+}
+.names span:nth-child(2) {
+  color: red;
+}
+.hide {
+  display: none;
+}
 .total-info {
   display: flex;
   flex-direction: row;
@@ -309,8 +318,12 @@ input[type="number"]:focus {
     padding: 4px 5px;
     cursor: pointer;
   }
+  .tip-amount {
+    font-size: 5.4rem;
+    color: var(--Strong-cyan);
+  }
   .tip-value {
-    font-size: 3.4rem;
+    font-size: 5.4rem;
     color: var(--Strong-cyan);
   }
 

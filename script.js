@@ -6,6 +6,7 @@ const btnTen = document.getElementById("btn-10");
 const btnFifteen = document.getElementById("btn-15");
 const btnTwentyFive = document.getElementById("btn-25");
 const btnFifty = document.getElementById("btn-50");
+const zeroValidation = document.getElementById("zero-validation");
 const tipAmount = document.querySelector(".tip-amount");
 const tipValue = document.querySelector(".tip-value");
 const btnReset = document.querySelector(".reset");
@@ -87,6 +88,9 @@ btnCustom.addEventListener("input", function () {
 
 quantityOfPeople.addEventListener("input", function () {
   const quantityValue = parseFloat(quantityOfPeople.value);
+  if (quantityValue === 0) {
+    zeroValidation.classList.remove("hide");
+  }
   finalValue = result / quantityValue;
   tipAmount.textContent = (result - price) / quantityValue;
   tipValue.textContent = finalValue;
