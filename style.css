@@ -200,6 +200,11 @@ span {
 .names span:nth-child(2) {
   color: red;
 }
+
+.dolar {
+  font-size: 6rem;
+  color: var(--Strong-cyan);
+}
 .hide {
   display: none;
 }
