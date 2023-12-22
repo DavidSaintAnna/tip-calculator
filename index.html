@@ -24,7 +24,7 @@
                <div class="buttons">
                   <span>Bill</span>
                   <label for="input-tip" class="input-tip">
-                  <input type="number" placeholder="0" id="bill">
+                  <input type="number" placeholder="0" id="bill"  min="0">
                   </label>
                   <span>Select Tip %</span>
                   <div class="btn-container">
@@ -41,7 +41,7 @@
                         <span id="zero-validation"class="hide">Can't be zero</span>
                      </div>
                      <label for="input-people" class="input-people">
-                     <input type="number" id="people-quantity">
+                     <input type="number" id="people-quantity"  min="1">
                      </label>
                   </div>
                </div>
@@ -69,6 +69,6 @@
             </div>
          </section>
       </main>
-      <script  src="script.js"></script>
+      <script  type="module" src="script.js"></script>
    </body>
 </html>
