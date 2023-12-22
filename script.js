@@ -92,8 +92,8 @@ quantityOfPeople.addEventListener("input", function () {
     zeroValidation.classList.remove("hide");
   }
   finalValue = result / quantityValue;
-  tipAmount.textContent = (result - price) / quantityValue;
-  tipValue.textContent = finalValue;
+  tipAmount.textContent = Math.ceil((result - price) / quantityValue);
+  tipValue.textContent = Math.ceil((result - price) / quantityValue);
 });
 
 btnReset.addEventListener("click", function () {
