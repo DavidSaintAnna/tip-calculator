@@ -10,6 +10,17 @@
 
 ---
 
+**Commands**
+
+```bash
+# Install dependencies
+$ npm install ou npm i
+
+# Start development server
+$ npm run dev
+
+```
+
 ## :eye_speech_bubble: **Visualizar**
 
 <div align="center">
