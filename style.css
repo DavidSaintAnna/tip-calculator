@@ -154,7 +154,7 @@ span {
 
 .tip-content {
   width: 100%;
-  height: 35%;
+  height: 40%;
   margin-top: 10px;
   display: flex;
   flex-direction: column;
@@ -291,6 +291,11 @@ input[type="number"]:focus {
 
   .buttons button {
     width: 110px;
+  }
+
+  .dolar {
+    font-size: 3rem;
+    color: var(--Strong-cyan);
   }
 
   .tip-content {
