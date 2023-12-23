@@ -17,7 +17,6 @@ let finalValue = 0;
 
 function updatePrice() {
   price = parseFloat(inputBill.value);
-  console.log(price);
 }
 
 inputBill.addEventListener("input", updatePrice);
@@ -30,7 +29,6 @@ btnFive.addEventListener("click", function () {
   btnTwentyFive.classList.remove("clicked");
   btnFifty.classList.remove("clicked");
   result = (price * 5) / 100 + price;
-  console.log(result);
 });
 
 btnTen.addEventListener("click", function () {
@@ -41,7 +39,6 @@ btnTen.addEventListener("click", function () {
   btnTwentyFive.classList.remove("clicked");
   btnFifty.classList.remove("clicked");
   result = (price * 10) / 100 + price;
-  console.log(result);
 });
 
 btnFifteen.addEventListener("click", function () {
@@ -52,7 +49,6 @@ btnFifteen.addEventListener("click", function () {
   btnTwentyFive.classList.remove("clicked");
   btnFifty.classList.remove("clicked");
   result = (price * 15) / 100 + price;
-  console.log(result);
 });
 
 btnTwentyFive.addEventListener("click", function () {
@@ -64,7 +60,6 @@ btnTwentyFive.addEventListener("click", function () {
   btnFifty.classList.remove("clicked");
 
   result = (price * 25) / 100 + price;
-  console.log(result);
 });
 
 btnFifty.addEventListener("click", function () {
@@ -76,14 +71,12 @@ btnFifty.addEventListener("click", function () {
   btnTwentyFive.classList.remove("clicked");
 
   result = (price * 50) / 100 + price;
-  console.log(result);
 });
 
 btnCustom.addEventListener("input", function () {
   updatePrice();
   const customValue = parseFloat(btnCustom.value);
   result = (price * customValue) / 100 + price;
-  console.log(result);
 });
 
 quantityOfPeople.addEventListener("input", function () {
