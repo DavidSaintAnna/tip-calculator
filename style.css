@@ -294,7 +294,7 @@ input[type="number"]:focus {
   }
 
   .dolar {
-    font-size: 3rem;
+    font-size: 6rem;
     color: var(--Strong-cyan);
   }
 
