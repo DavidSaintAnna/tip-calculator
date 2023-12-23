@@ -293,11 +293,6 @@ input[type="number"]:focus {
     width: 110px;
   }
 
-  .dolar {
-    font-size: 6rem;
-    color: var(--Strong-cyan);
-  }
-
   .tip-content {
     width: 50%;
     height: 90%;
