@@ -38,7 +38,7 @@ Deploy do front-end efetuado no [Netlify](https://www.netlify.com/) para visuali
 
 <div align="center">
 
-Aplicação frontEnd responsiva com minha versão do desafio do frontEndMentor de lidar com uma calculadora de gorjetas javascript, ela calcula os percentuais de acréscimo por gorjeta no preço principal, seguindo a especificdade do desafio https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX.
+Aplicação frontEnd responsiva com minha versão do desafio do frontEndMentor de lidar com uma calculadora de gorjetas javascript, ela calcula os percentuais de acréscimo por gorjeta no preço principal, seguindo a especificidade do desafio https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX.
 
 ---
 
